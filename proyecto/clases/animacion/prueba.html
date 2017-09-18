@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style>
+	canvas{
+    position: absolute;
+}
+	
+	</style>
+
+<script>
+	function getPosition(event){
+	var puntos=0;
+	var x=[];
+	var y=[];
+		 
+    var pointSize = 10; // Change according to the size of the point.
+    var ctx = document.getElementById("canvas").getContext("2d");
+	var rect = canvas.getBoundingClientRect();
+
+	for(puntos=0;puntos<=4;puntos++)	
+		{
+     x[puntos].push(event.clientX - rect.left); // x 
+     y[puntos].push( event.clientY - rect.top); // y 
+    ctx.fillStyle = "blue"; // 
+    ctx.beginPath(); //
+    ctx.arc(x[puntos], y[puntos], pointSize, 0, Math.PI * 2, true); 
+    ctx.fill(); // 
+}}
+	
+	</script>
+</head>
+
+<body>
+<canvas width = 400 height = 300></canvas>
+</body>
+</html>

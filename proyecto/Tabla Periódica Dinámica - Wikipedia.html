@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<!-- saved from url=(0049)https://www.ptable.com/?lang=es#Writeup/Wikipedia -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Tabla Periódica Dinámica - Wikipedia</title>
+
+  <meta name="description" content="Tabla periódica interactiva con páginas dinámicas que muestran nombres, electrones, estados de oxidación, tendencias, orbitales, isótopos y búsqueda. Descripciones completas.">
+  <meta name="keywords" content="Tabla Periódica, dynamic, interactive, elements, name, chemistry, printable, homework, pdf, electron configuration">
+  <link rel="canonical" href="https://www.ptable.com/?lang=es">
+
+  <meta property="og:image" content="/Images/icon-114.png">
+  <meta property="fb:admins" content="9403459">
+
+  <meta name="google" content="notranslate">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Ptable">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="application-name" content="Ptable">
+  <meta name="msapplication-TileColor" content="#2B4EE9">
+  <meta name="msapplication-TileImage" content="Images/pt-logo.png">
+  <link rel="apple-touch-icon" href="https://www.ptable.com/Images/icon-57.png">
+  <link rel="apple-touch-icon" href="https://www.ptable.com/Images/icon-72.png" sizes="72x72">
+  <link rel="apple-touch-icon" href="https://www.ptable.com/Images/icon-114.png" sizes="114x114">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@Ptable">
+  <meta name="twitter:title" content="Tabla Periódica Dinámica">
+  <meta name="twitter:description" content="Tabla periódica interactiva con páginas dinámicas que muestran nombres, electrones, estados de oxidación, tendencias, orbitales, isótopos y búsqueda. Descripciones completas.">
+  <meta name="twitter:creator" content="@Lucent">
+  <meta name="twitter:image" content="/Images/icon-114.png">
+
+  <link href="./Tabla Periódica Dinámica - Wikipedia_files/screen-default-f4eb9df.css" rel="stylesheet" type="text/css" media="screen, print" id="MainStyle">
+  <style type="text/css" media="screen, print" id="Sheet-Electrons">
+big				{ line-height: 1; }
+small, .Shells, #Legend span	{ display: none; }
+#Closeup small	{ display: inline-block; font-size: 50%; }
+#Legend acronym	{ letter-spacing: normal; }
+.Element		{ padding: 1px 1px 0 1px; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAADpklEQVR4Xs2ZwY6jMBAFWeQv3P//FnoPe2AkH2pK5RnFFwJxsKm4X782f2bm7/W/zXbcPr/ncI2OzzvGdv58Gefh7/d7f2dsunZvMD6gfcJcboZyDQCDvgrAnIHZ7/GuGIDxnkPY/d4/Pz8Ic24GcE2fkAfVIPf73fTQAcJI6BNWxvG2Xggw8U3JIYsBpKI5ABDuJ8GAfuRJ9XBgrROfUVcXDUKrhQfha/TZr6auVQuAYCh0SL1FcCM1hv9V1CEfcgPjihBqAr7kShgxsA2t+SR3vQjIfvT1U0jjY/WIwXN0YLqGa7C8se/AOFlorQ2R6dpDAVg2pKbqEQEL4rsdMY2DOEOYhgf3EBhMiPvt+6Y3DAFA5nGXcIPR8PFq4d97CAIIh5JZ1iC2AJVXS4BANmKU8w1mT+mNWC0o8D5N86paQBWAeCimD4ybzmW6ZqNXoUCIqLkYPSLNA40RRi/WUWbPp+oRXINQgnhGo8fXHwg9sAdej97m9Y0NnjdbE+otuJ/VKI6GbPDY/fKDwD0xe5k/EcZHXwZgcmH5gB6cffvpZeDK4ksxakQZIJ7OXmPNIFTXjrp7KDaK2UxujX63i+8T9jMwpHoocKXutYXbAhB+w7tD6f5na34eQmMACOhBLQPaKvNtCbOUa6daPhiXXUIZNcZuUxZhFdnLj+nbgMbI1M1C+piY70LtQ1eHEomaLxM6lPqGlIrIx76oz2VCh8LX/JyHna/fBx7riBuUDpX0au0des0EAOG6yDbqyKYVnS/EZJioh2L0IqRssVEVtCY64vNi7fd8vY8hGN0RdygMgeeNPoZ1pTvi6pSdv+JiE7YdzHl3xAGKHotWFvgY8a6p7OQzOA41n5onvFdyaTs7Yg/lEXsv+lUyvNSvqbE7Yg+FYQFAE0q9ROhbogxMwNJvIiek7eiI/ZK3/UkjweCFtI1AWDArFJ4zj0fiO+e1xhvALtocNlBd049YoAMQ9YA2HAl0EN9eIhhgDK1DgT7Ox7QSwa+S8F2CgmA4lLzGxImz1nQoDIb1xAPpnodDjqGwTEBWaiVCB9LF21iIVCsRDAvkk6Bkg6e/70CuX4RyBYMnYACQ4HuOQ+FXtNym6U2vr1o/nv+yELredDMI/QqUnq4NDAskhE6CAmAYlO/HBjE8aIJS92OmaE7XGg4dAKagHBVf/sxA+irpUL4rvtNrp561Sn8P5bz4Xh2IF+KTUPRGVRdnn7kCRA+lb4Z7GKeBBIFX7R+ueM7YXngaugAAAABJRU5ErkJggg=="); background-repeat: no-repeat; }
+.Element acronym, #Legend acronym { line-height: 0.9; }
+.KeyRegion, .InnerBorder	{ font-size: 0.8em; }
+.KeyRegion input	{ height: 13pt; }
+.Paren			{ font-size: 0.9em; width: 600pt; }
+.Period			{ width: 1em; }
+#OrbitalString, #SliderCell	{ font-size: 1em; }
+thead td		{ border-bottom-width: 0; }
+td.Lock			{ outline-offset: -2px; }
+.Clean, #Legend	{ border-width: 1px; }
+#Series td, #Hund	{ font-size: 0.8em; }
+#Series td, .Element, #CloseupElement	{ border: 1px solid #777; }
+thead a:nth-child(2){ font-size: 0.6em; }
+  </style>
+  <style type="text/css" media="screen, print" id="Sheet-Name">
+.Element acronym, #Legend acronym, .Element i, #Legend i	{ text-align: center; }
+#CloseupElement				{ width: 3.75em; border: none; }
+.Element em, #Legend em		{ display: none; }
+.Element i, #Legend i		{ font-size: 0.7em; width: 3.6em; text-overflow: clip; }
+.Element acronym, #Legend acronym	{ width: 2.1em; line-height: 1; }
+#Legend acronym				{ letter-spacing: -0.08em; }
+.Element					{ padding: 0.2em; padding-bottom: 1px; border-width: 5px; border-color: white; background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACPklEQVR4Xu3cUU7DMBgEYbN35f438M9jkFJw2MTWusxIFqG89ZPtJkX+qKrP1lr/Nuq4Po268FqZ1+Of16/r9Pp4tPPv69MNjAJjHki9xjj+NsIxAMB4kZ5aoozZMES4BOBjtByMIwVj9AsY3cU4AYWkN8MoCyMoXdkvHsSoyRjdwUgFKWOmlLFpgzHc1H2MbixNxtq/8TLlzxD/Y62zTzj3GgZUMzDiQOqJO/GpN37+rKgWntIxjGWsGRhxIBWM0f+IUWkY/p26j1GrMU4QBsaOe0hdng3rMfoFiGqbpdGbH4pRB4SDkQ9SF2dJ3cAoA8Mfm6YV32mMXpswtk03MMrFOI0ngTZPNzD6TYwOxmuQWoBRUzHeKLmP0Y2NexrGO6HIxOgDBDDM5GAMEMC4kdxPUGDMnyG17MktGOMZshCjg/FzAiMreRjjNxsMLxkbuXEXDoY1Q8AI3NRDHok0D2P/5GOMkXyM4/o/gtQkjP48BjOkwFibjI0bjBVLVgYGyfyf21qOwZLlP631MUhXN3NjqTIwSNZduI/RwPCfZdUEjLqMwQw5w6zHIJkYNQeDlHVKAikLg5R1ZAUp65QEUtYpCaQsDFLWMkXKOiWB5GIMkMxIWUdWkLKOrCDtcmQFM+RoIQZpg1MSANkJA5CgAAkKkJAAiQqQthaFlIVBysIgZWGQsjBIWRikLAxSFgYpDQOQhAgQQAgQQAgQQAgQQAgQAgQQAgQQAgQQAgQQAoQAAYQAAYQAAYQAAYQAoS8IYJwyDwL5wgAAAABJRU5ErkJggg=="); }
+.BlueTop, .BlueLeft, .BlueBottom, .BlueTop	{ border-width: 6px; }
+.KeyRegion, .InnerBorder	{ font-size: 0.75em; }
+#Orbital					{ bottom: auto; }
+#Series td					{ border: none; }
+td.Lock						{ outline-width: 4px; outline-offset: -5px; }
+.Paren						{ width: 580pt; /* don't ask */ }
+  </style>
+  <style type="text/css" media="screen, print" id="Sheet-Weight">
+#Legend strong				{ letter-spacing: -0.1em; }
+strong						{ font-size: 0.8em; }
+.Element					{ border-width: 4px; }
+.Element i, #Legend i		{ display: none; }
+.Element acronym, #Legend acronym	{ width: 1.75em; font-size: 1.1em; line-height: 1.1; }
+.Element acronym.Long		{ letter-spacing: -0.09em; }
+.Element strong				{ text-align: center; }
+.KeyRegion					{ font-size: 0.5em; }
+.Paren						{ font-size: 0.7em; width: 480pt; }
+#OrbitalString, #SliderCell	{ font-size: 0.7em; }
+#Series						{ font-size: 1.7em; }
+#Hund						{ float: left; }
+#OrbitalHolder				{ width: 150pt; }
+#Orbital					{ bottom: 0; right: -10px; }
+#Properties, #IsotopeForm	{ font-size: 1.1em; }
+#Properties th, #IsotopeForm th	{ font-weight: normal; }
+.KeyRegion input, #SliderCell input	{ height: 11pt; }
+#SliderDisplay				{ font-size: 0.7em; width: 5ex; }
+.InnerBorder				{ font-size: 0.55em; }
+.BlueTop, .BlueLeft, .BlueBottom, .BlueTop	{ border-width: 5px; }
+#Block						{ display: none ! important; }
+.Paren						{ width: 300pt; }
+thead a:nth-child(2)		{ font-size: 0.5em; }
+  </style>
+  <style type="text/css" media="screen, print" id="Sheet-Borders">
+.KeyRegion					{ font-size: 0.4em; }
+#Legend						{ font-size: 0.8em; }
+.Period						{ width: 0; }
+thead a, .Period a			{ font-size: small; font-weight: normal; }
+strong						{ font-size: 1.1em; }
+.Element					{ border-width: 1px; padding: 0.2em 0.1em 0; }
+.Element acronym, #Legend acronym	{ font-size: 1.05em; }
+.Element acronym.Long		{ letter-spacing: -2px; }
+.BlueTop, .BlueLeft, .BlueBottom, .BlueTop	{ border-width: 2px; }
+.Paren						{ width: 300pt; }
+.Paren, .Copyright span		{ visibility: hidden; }
+  </style>
+
+  <style type="text/css" media="print">
+@page					{ size: landscape; margin: 0; }
+
+#Navigation, ul, #AdLeaderboardTop 	{ display: none; }
+input, #SliderTrack		{ visibility: hidden; }
+.Element, .Electron		{ background-image: none; }
+#Series td, .Element, #CloseupElement	{ border: 1px solid black; }
+.Clean, #Legend, .Shells	{ border-width: 1px; }
+#Legend acronym			{ font-weight: normal; }
+#KeyContainer			{ width: 90% ! important; }
+.Paren					{ line-height: 1.5; }
+.Alkali .Alkali         { background-color: #FFD47F; }
+.Alkaline .Alkaline     { background-color: #FFFF7F; }
+.Transition .Transition { background-color: #EECCCC; }
+.Poor .Poor             { background-color: #88EEDD; }
+.Metalloid .Metalloid	{ background-color: #88DD99; }
+.Halogen .Halogen		{ background-color: #66DDCC; }
+.Nonmetal .Nonmetal     { background-color: #7FF67F; }
+.Noble .Noble           { background-color: #C3D4FF; }
+.Lanthanoid .Lanthanoid { background-color: #FFD4C3; }
+.Actinoid .Actinoid     { background-color: #EED4E5; }
+.Undiscovered           { background-color: #FFFFFF; }
+.InnerBorder            { background-color: #CCCCFF; }
+.BlueLeft, .BlueRight, .BlueTop, .BlueBottom	{ border-color: #6666FF; }
+  </style>
+
+  <script async="" src="./Tabla Periódica Dinámica - Wikipedia_files/analytics.js.descarga"></script><script src="./Tabla Periódica Dinámica - Wikipedia_files/bugsnag-3.min.js.descarga" data-apikey="89a7744f0a74c197fd23f560afed1170"></script>
+  <script>Bugsnag.appVersion = "4b63d0f";</script>
+  <script type="text/javascript">
+   var scheme = "day", schemebase = (scheme === "night" ? "000000" : "FFFFFF"), schemehigh = (scheme === "night" ? "FFFFFF" : "000000");
+   var language = "es", rtl = false, unknown = "Desconocido", solid = "Sólido", liquid = "Líquido", gas = "Gaseoso", stable = "Estable";
+   if (scheme === "night") var statecolors = [{"Desconocido": "#99AA99", "Gaseoso": "#FFAAAA", "Líquido": "#AAAAFF", "Sólido": "#FFFFFF"},{"Desconocido": "#667766", "Gaseoso": "#AA0000", "Líquido": "#0000DD", "Sólido": "#222222"}];
+   else var statecolors = [{"Desconocido": "#667766", "Gaseoso": "#990000", "Líquido": "#0000DD", "Sólido": "#000000"},{"Desconocido": "#667766", "Gaseoso": "#990000", "Líquido": "#0000DD", "Sólido": "#000000"}];
+   var allspecs = {
+   	series: {"units":[" K"],"slidermin":0,"slidermax":6000,"tab":"Weight","subset":0},
+   	chemical: {"units":[null],"legends":["Series","Series"],"tab":"Series","values":["Wikipedia","IUPAC"],"subset":1,"help":"Select either [http:\/\/en.wikipedia.org\/wiki\/Collective_names_of_groups_of_like_elements Wikipedia's element classifications] or the [http:\/\/old.iupac.org\/publications\/books\/rbook\/Red_Book_2005.pdf IUPAC Red Book]'s groupings (IR-3.5, page 51)."},
+   	state: {"units":[" K"],"slidermin":0,"slidermax":6000,"legends":["State"],"tab":"State","help":"Select a temperature to see the state of matter of all elements at that temperature."},
+   	melt: {"units":[" K"],"startcolor":"6666FF","endcolor":"FF0000","defaultcolor":"CCCCCC","slidermin":0,"slidermax":6000,"legends":["Kelvin"],"tab":"Melting Point","subset":0,"help":"Darker colors indicate an element's melting point is colder (blue) or hotter (red) than the selected temperature."},
+   	boil: {"units":[" K"],"startcolor":"6666FF","endcolor":"FF0000","defaultcolor":"CCCCCC","slidermin":0,"slidermax":6000,"legends":["Kelvin"],"tab":"Boiling Point","subset":0,"help":"Darker colors indicate an element's boiling point is colder (blue) or hotter (red) than the selected temperature."},
+   	electroneg: {"units":[null],"startcolor":"FFFF66","endcolor":"BB0000","defaultcolor":schemebase,"legends":["Pauling"],"tab":"Electronegativity","scales":["lin"],"subset":0,"help":"Electronegativity values range from a low of 0.7 (yellow) to 3.98 (red)."},
+   	affinity: {"units":[" kJ\/mol"],"startcolor":"009900","endcolor":"FFFF00","defaultcolor":schemebase,"legends":["kJ\/mol"],"tab":"Affinity","scales":["log"],"subset":0,"help":"Electron affinity values range from a low of 0 (green) to 349 (yellow)."},
+   	valence: {"units":[null],"startcolor":"FFFF00","endcolor":"0088FF","defaultcolor":schemebase,"legends":["Valence"],"tab":"Valence","scales":["lin"],"subset":0,"help":"Maximum valences are based on the oxidation states shown in the Orbitals tab."},
+   	ionize: {"units":[" kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"," kJ\/mol"],"startcolor":"66FF44","endcolor":"8844FF","defaultcolor":schemebase,"legends":["kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol","kJ\/mol"],"tab":"Ionization","dbnames":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30],"values":["1st","2nd","3rd","4th","5th","6th","7th","8th","9th","10th","11th","12th","13th","14th","15th","16th","17th","18th","19th","20th","21st","22nd","23rd","24th","25th","26th","27th","28th","29th","30th"],"scales":["log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log","log"],"subset":0},
+   	radius: {"units":[" pm"," pm"," pm"," pm"],"startcolor":schemebase,"endcolor":"446600","defaultcolor":"CCCCCC","legends":["pm","pm","pm","pm"],"tab":"Radius","dbnames":["calculated","empirical","covalent","van_der_waals"],"values":["Calculated","Empirical","Covalent","Van der Waals"],"scales":["lin","lin","lin","lin"],"subset":0},
+   	hardness: {"units":[" MPa",null," MPa"],"startcolor":"FFCCEE","endcolor":"008866","defaultcolor":schemebase,"legends":["MPa",null,"MPa"],"tab":"Hardness","dbnames":["brinell","mohs","vickers"],"values":["Brinell","Mohs","Vickers"],"scales":["lin","lin","log"],"subset":0},
+   	modulus: {"units":[" GPa"," GPa"," GPa"],"startcolor":"BBFFDD","endcolor":"7700AA","defaultcolor":schemebase,"legends":["GPa","GPa","GPa"],"tab":"Modulus","dbnames":["bulk","shear","young"],"values":["Bulk","Shear","Young"],"scales":["lin","lin","lin"],"subset":0},
+   	density: {"units":[" kg\/m\u00b3"," kg\/m\u00b3"],"startcolor":"DDDDFF","endcolor":"666600","defaultcolor":schemebase,"legends":["kg\/m\u00b3","kg\/m\u00b3"],"tab":"Density","dbnames":["stp","liquid"],"values":["STP","Liquid"],"scales":["lin","lin"],"subset":0},
+   	conductivity: {"units":[" W\/mK"," MS\/m"],"startcolor":schemebase,"endcolor":"008800","defaultcolor":"CCCCCC","legends":["W\/mK","MS\/m"],"tab":"Conductivity","dbnames":["thermal","electric"],"values":["Thermal","Electric"],"scales":["lin","lin"],"subset":0},
+   	heat: {"units":[" J\/kgK"," kJ\/mol"," kJ\/mol"],"startcolor":schemebase,"endcolor":"FF0000","defaultcolor":"CCCCCC","legends":["J\/kgK","kJ\/mol","kJ\/mol"],"tab":"Heat","dbnames":["specific","vaporization","fusion"],"values":["Specific","Vaporization","Fusion"],"scales":["log","lin","log"],"subset":0},
+   	abundance: {"units":["%","%","%","%","%","%"],"startcolor":schemebase,"endcolor":"4444FF","defaultcolor":"CCCCCC","legends":["Percent","Percent","Percent","Percent","Percent","Percent"],"tab":"Abundance","dbnames":["universe","solar","meteor","crust","ocean","human"],"values":["Universe","Solar","Meteor","Crust","Ocean","Human"],"scales":["log","log","log","log","log","log"],"subset":0,"help":"Abundance percentages for elements in each context are by mass, not number of atoms."},
+   	discover: {"units":[null],"slidermin":1730,"slidermax":2017,"default":2017,"startcolor":"FFFFFF","endcolor":"666600","defaultcolor":"FFFFFF","legends":["Year"],"tab":"Discovered","subset":0,"help":"Select a year to dim elements discovered after that year."},
+   	orbital: {"units":[null],"legends":["Oxidation"],"tab":"Oxidation","subset":0,"help":"Common oxidation states are shown in bold beneath the element closeup."},
+   	isotope: {"units":[null],"legends":["Isotopes","Isotopes"],"tab":"Isotopes","values":["Selected","All"],"subset":0,"help":"Choose whether to display all of an element's isotopes or only a select few when clicked."},
+   	isoname: {"tab":"Mass"},
+   	isomass: {"tab":"Mass","units":[null],"startcolor":schemebase,"endcolor":"0095B6","defaultcolor":schemebase,"scale":"lin","subset":0},
+   	binding: {"tab":"Binding Energy","units":[" MeV"],"startcolor":schemebase,"endcolor":"009900","defaultcolor":schemebase,"scale":"lin","subset":0},
+   	masscontrib: {"tab":"Abundance","units":["%"],"startcolor":schemebase,"endcolor":"DAA520","defaultcolor":schemebase,"legends":["%"],"scale":"log","subset":0},
+   	halflife: {"tab":"Half-Life","units":["Time"],"startcolor":schemebase,"endcolor":"B88600","defaultcolor":"A87600","scale":"log","subset":0},
+   	width: {"tab":"Decay Width","units":[" MeV"],"startcolor":schemebase,"endcolor":"008888","defaultcolor":schemebase,"scale":"log","subset":0},
+   	compound: {"units":[null],"legends":["Compounds"],"tab":"Compounds","subset":0,"help":"Click one or more elements to show all compounds containing those elements."}
+   };
+
+   var isIE = (/*@cc_on ! @*/ false);
+   var externalEval = function (str) { return eval("(" + str + ")"); };
+// if (window.top != window.self && document.referrer.indexOf("allperiodictables") !== -1) top.location.replace(self.location.href);
+  </script>
+  <script async="" src="./Tabla Periódica Dinámica - Wikipedia_files/interactivity-4b63d0f.js.descarga"></script>
+
+  <link rel="shortcut icon" href="https://www.ptable.com/Images/favicon.ico" type="image/vnd.microsoft.icon">
+ <script src="https://edge.quantserve.com/quant.js" async="" type="text/javascript"></script></head>
+ <body class="">
+
+  <h1><a href="https://www.ptable.com/?lang=es#" id="Reset" title="Tabla Periódica"><img src="./Tabla Periódica Dinámica - Wikipedia_files/ptable-logo.svg" alt="Tabla Periódica de los Elementos"></a></h1>
+
+  <div id="TabTip" style="display: none;">Includes interactive visualizations, properties, orbitals, isotopes, and compound mixing.</div>
+
+  <div id="Navigation" style="vertical-align: baseline;">
+   <a href="http://www.youtube.com/watch?v=EX56SP-lTHc&amp;hd=1" title="Screencast of all features" id="Screencast">Demo</a>
+   <a href="https://www.ptable.com/about.html" title="Questions about this particular periodic table">Acerca de</a>
+   <a href="https://www.ptable.com/feedback.html" title="Contact the designer">Contactar</a>
+   <a href="https://www.ptable.com/poster/" title="Periodic table poster" style="font-weight: bold; font-size: large;">Poster</a>
+   <a href="https://www.ptable.com/print/" title="Tabla Periódica PDF">Print</a>
+   <a href="https://www.ptable.com/Images/tabla%20peri%C3%B3dica.png" title="Tabla Periódica image">Image</a>
+   <a href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;client_id=3a92c33badc41acf533fd35d4f1b56a89c52a6765306cf363c8bd2f03762109e&amp;redirect_uri=http%3A%2F%2Fwww.ptable.com%2Fdonate%2F">Remove ads</a>
+<!--<a href="advertise-to-students.php" title="Advertise to students on this site">Anuncio</a> -->
+   <form name="language" method="get" action="https://www.ptable.com/" id="langswitch"><select name="lang" id="Lang"><option value="af">Afrikaans</option><option value="ar">العربية</option><option value="bg">Български</option><option value="bn">বাংলা</option><option value="ca">Català</option><option value="cs">Čeština</option><option value="cy">Cymraeg</option><option value="da">Dansk</option><option value="de">Deutsch</option><option value="el">Ελληνικά</option><option value="en">English</option><option value="eo">Esperanto</option><option value="es" selected="selected">Español</option><option value="et">Eesti</option><option value="fa">فارسی</option><option value="fi">Suomi</option><option value="fr">Français</option><option value="he">עברית</option><option value="hi">हिन्दी</option><option value="hr">Hrvatski</option><option value="hu">Magyar</option><option value="id">Bahasa</option><option value="is">Íslenska</option><option value="it">Italiano</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="la">Latina</option><option value="lt">Lietuvių</option><option value="lv">Latviešu</option><option value="nl">Nederlands</option><option value="no">Norsk</option><option value="pl">Polski</option><option value="pt">Português</option><option value="ro">Română</option><option value="ru">Русский</option><option value="sk">Slovenčina</option><option value="sl">Slovenščina</option><option value="sr">Српски</option><option value="sv">Svenska</option><option value="sw">Kiswahili</option><option value="th">ไทย</option><option value="tr">Türkçe</option><option value="uk">Українська</option><option value="vi">Tiếng Việt</option><option value="zh">中文 (简)</option><option value="zh-tw">中文 (繁)</option></select><input type="submit" value="▶"></form>
+   <input id="SearchInput" type="search" placeholder="Buscar">
+<!-- <a href="#" onclick="return Ptable.external_load('song');" title="Song">Song</a> -->
+  </div>
+
+  <ul class="Views" id="Views">
+   <li style="display: none;" class="Selected"><input type="checkbox" id="Borders" checked=""><label for="Borders" title="Show thick borders">Borders</label></li>
+   <li class=""><input type="checkbox" id="Weight" checked=""><label for="Weight" title="Show atomic masses">Weight</label></li>
+   <li class=""><input type="checkbox" id="Name" checked=""><label for="Name" title="Show element names">Nombres</label></li>
+   <li class=""><input type="checkbox" id="Electrons"><label for="Electrons" title="Show electron configurations">Electrones</label></li>
+   <li class="" style=""><input type="checkbox" id="wide"><label for="wide" title="Show rare earth elements inline" style="">Ancho</label></li>
+  </ul>
+
+  <ul class="Tabs">
+   <li class="TabList WriteupTab"><a class="MainTab Selected" id="WriteupTab" href="https://www.ptable.com/?lang=es#Writeup/Wikipedia">Wikipedia</a></li><!--<ul id="SeriesChoice">--><li style="display: none;"><a id="Wikipedia" href="https://www.ptable.com/?lang=es#Writeup/Wikipedia" class="Selected">Wikipedia</a></li><!--<li><a id="Videos" href="#Writeup/Videos">Videos</a></li><li><a id="Photos" href="#Writeup/Photos">Photos</a></li></ul>--><li class="TabList"><a class="MainTab" id="PropertyTab" href="https://www.ptable.com/?lang=es#Property/State" style="">Propiedades</a></li><li class="TabList"><a class="MainTab" id="OrbitalTab" href="https://www.ptable.com/?lang=es#Orbital">Orbitales</a></li><li class="TabList"><a class="MainTab" id="IsotopeTab" href="https://www.ptable.com/?lang=es#Isotope">Isótopos</a></li><li class="TabList"><a class="MainTab" id="CompoundTab" href="https://www.ptable.com/?lang=es#Compound">Compuestos</a></li></ul>
+
+  <div id="OarJars">
+   <div id="OarJarsClose" title="Hide ads for a few days"></div>
+   <script async="" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+   <ins class="adsbygoogle" data-ad-client="ca-pub-1899956715581914" data-ad-slot="1123424162" data-ad-format="horizontal"></ins>
+   <div id="OarJarsText" style="display: block;">Don't like ads? No problem! You're still welcome to use the site. If you find it especially useful, please consider <a href="https://www.patreon.com/bePatron?u=6102731">making a $1 monthly donation</a>. If this works out, we'll get rid of ads for everyone. <a href="https://www.patreon.com/oauth2/authorize?response_type=code&amp;client_id=3a92c33badc41acf533fd35d4f1b56a89c52a6765306cf363c8bd2f03762109e&amp;redirect_uri=http%3A%2F%2Fwww.ptable.com%2Fdonate%2F">I donated; hide this message.</a></div>
+   <script src="https://www.ptable.com/ads.js" type="text/javascript"></script>
+  </div>
+
+  <div id="ExternalKey" class="Clean KeyRegion"></div>
+
+<table class="Alkali Alkaline Lanthanoid Actinoid Transition Poor Metalloid Nonmetal Noble" id="Main" summary="periodic table" border="0" cellspacing="0">
+ <thead>
+ <tr>
+  <td class="IsoHolder"><div id="isotopeholder" class="AlphaEmission ProtonEmission TwoProtonEmission NeutronEmission TwoNeutronEmission SpontaneousFission BetaDecay DoubleBetaDecay BetaPlusDecay DoubleBetaPlusDecay ElectronCapture Stable" style="opacity: 1; display: none;"></div></td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%201">1</a>  </td>
+  <td style="background-color: rgb(255, 255, 128);"><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%202">2</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%203">3</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%204">4</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%205">5</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%206">6</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%207">7</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%208">8</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%209">9</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%2010">10</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%2011">11</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%2012">12</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%2013">13</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%2014">14</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%2015">15</a>  <a href="https://es.wikipedia.org/wiki/Pnictogens">Pnictogens</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%2016">16</a>  <a href="https://es.wikipedia.org/wiki/Chalcogens">Chalcogens</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%2017">17</a>  <a href="https://es.wikipedia.org/wiki/Hal%C3%B3genos">Halógenos</a>  </td>
+  <td style=""><a href="https://es.wikipedia.org/wiki/Elementos%20del%20grupo%2018">18</a>  </td>
+ </tr>
+ </thead>
+
+ <tbody class="">
+ <tr>
+  <th class="Period" style=""><a href="http://es.wikipedia.org/wiki/Elementos%20del%20periodo%201">1</a></th>
+  <td class="Element Nonmetal  s" style=""><a href="https://es.wikipedia.org/wiki/Hidr%C3%B3geno" style=""><big><strong an="1">1</strong> <acronym style="color: rgb(0, 0, 0);">H</acronym> <em class="Long">Hidrógeno</em> <i>1,008</i></big><small>1</small></a></td>
+
+  <td id="Legend" style=""><big><strong><span># </span>Atómico</strong> <acronym>Sím<span>bolo</span></acronym> <em>Nombre</em> <i>Peso<span> Atómico</span></i></big></td>
+
+  <td class="Clean KeyRegion" id="KeyCell" colspan="10" rowspan="3">
+   <table id="KeyContainer" border="0" cellspacing="0" cellpadding="0" class=""><tbody><tr><td id="CloseupHolder" style="">
+
+ 
+
+ <table id="MatterState" cellspacing="5" cellpadding="0" style="display: none;"><tbody>
+  <tr class="">
+   <td class="Solid" state="Sólido"><acronym>C</acronym></td>
+   <th class="Solid">Sólido</th>
+  </tr>
+  <tr class="">
+   <td class="Liquid" state="Líquido"><acronym>Hg</acronym></td>
+   <th class="Liquid">Líquido</th>
+  </tr>
+  <tr class="">
+   <td class="Gas" state="Gaseoso"><acronym>H</acronym></td>
+   <th class="Gas">Gaseoso</th>
+  </tr>
+  <tr class="">
+   <td class="Unknown" state="Desconocido"><acronym>Rf</acronym></td>
+   <th class="Unknown">Desconocido</th>
+  </tr>
+ </tbody></table>
+
+ 
+
+<div id="Closeup" style="display: block;"><div id="CloseupElement" style="background-color: rgb(255, 255, 68);"><big><strong an="38">38</strong> <acronym style="color: rgb(0, 0, 0);">Sr</acronym> <em>Estroncio</em> <i>87,62</i></big><small>2<br>8<br>18<br>8<br>2</small></div><div id="ELECTRONSTRING" style="text-align: center; opacity: 0.3;" class=""></div></div><form name="isotopes" id="IsotopeForm" action="https://www.ptable.com/?lang=es">
+  <table cellspacing="0" cellpadding="0">
+   <tbody><tr>
+    <td><input type="radio" name="isotopes" id="t_isoname" value="isoname" checked=""></td>
+    <th><label for="t_isoname" id="l_isoname">Nombre</label></th>
+    <td id="ISONAME"><span></span><span></span></td>
+   </tr><tr>
+    <td><input type="radio" name="isotopes" id="t_isomass" value="isomass"></td>
+    <th><label for="t_isomass" id="l_isomass">Mass</label></th>
+    <td id="ISOMASS"></td>
+   </tr><tr>
+    <td><input type="radio" name="isotopes" id="t_binding" value="binding"></td>
+    <th><label for="t_binding" id="l_binding">Binding Energy</label></th>
+    <td id="BINDING"></td>
+   </tr><tr>
+    <td><input type="radio" name="isotopes" id="t_masscontrib" value="masscontrib"></td>
+    <th><label for="t_masscontrib" id="l_masscontrib">Abundancia</label></th>
+    <td id="MASSCONTRIB"></td>
+   </tr><tr>
+    <td><input type="radio" name="isotopes" id="t_halflife" value="halflife"></td>
+    <th><label for="t_halflife" id="l_halflife">Half-Life</label></th>
+    <td id="HALFLIFE"></td>
+   </tr><tr>
+    <td><input type="radio" name="isotopes" id="t_width" value="width"></td>
+    <th><label for="t_width" id="l_width">Decay Width</label></th>
+    <td id="WIDTH"></td>
+   </tr>
+  </tbody></table>
+ </form></td><td>
+
+ <table id="Series" class="Series" cellspacing="0" style="opacity: 1;">
+  <tbody><tr>
+   <th colspan="5" style=""><a href="http://es.wikipedia.org/wiki/Metales">Metales</a></th>
+   <td id="Metalloid" class="Metalloid" rowspan="3"><a href="http://es.wikipedia.org/wiki/Metaloides">Metaloides</a></td>
+   <th colspan="2" style=""><a href="http://es.wikipedia.org/wiki/No%20metales">No metales</a></th>
+  </tr><tr>
+   <td id="Alkali" class="Alkali" rowspan="2"><a href="http://es.wikipedia.org/wiki/Alcalinos">Alcalinos</a></td>
+   <td id="Alkaline" class="Alkaline Highlight" rowspan="2"><a href="http://es.wikipedia.org/wiki/Alcalinot%C3%A9rreos">Alcalinotérreos</a></td>
+   <td id="Lanthanoid" class="Lanthanoid"><a href="http://es.wikipedia.org/wiki/Lant%C3%A1nidos">Lantánidos</a></td>
+   <td id="Transition" class="Transition" rowspan="2"><a href="http://es.wikipedia.org/wiki/Metales%20de%20transici%C3%B3n">Metales de transición</a></td>
+   <td id="Poor" class="Poor" rowspan="2"><a href="http://es.wikipedia.org/wiki/Metales%20del%20bloque%20p">Metales del bloque p</a></td>
+   <td id="Nonmetal" class="Nonmetal" rowspan="2"><a href="http://es.wikipedia.org/wiki/Otros%20no%20metales">Otros no metales</a></td>
+   <!--<td id="Halogen" class="Halogen" rowspan="2"><a href="http://es.wikipedia.org/wiki/Hal%C3%B3genos">Halógenos</a></td>-->
+   <td id="Noble" class="Noble" rowspan="2"><a href="http://es.wikipedia.org/wiki/Gases%20nobles">Gases nobles</a></td>
+  </tr><tr>
+   <td id="Actinoid" class="Actinoid"><a href="http://es.wikipedia.org/wiki/Act%C3%ADnidos">Actínidos</a></td>
+  </tr></tbody>
+ </table>
+
+ <table id="Temperature" style="">
+  <tbody><tr><td>0</td> <th>Kelvin</th></tr>
+  <tr><td>-273</td> <th>°Celsius</th></tr>
+  <tr><td>-460</td> <th>°Fahrenheit</th></tr>
+ </tbody></table>
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+<div id="Properties" style="display: none; opacity: 1;"><form name="visualize" action="https://www.ptable.com/?lang=es">
+  <table cellspacing="0" cellpadding="0" class="PropertiesRight">
+   <tbody><tr>
+    <td><input type="radio" name="visualize" id="t_radius" value="radius"></td>
+    <th><label for="t_radius" id="l_radius"><span></span> Radio</label></th>
+    <td id="RADIUS"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_hardness" value="hardness"></td>
+    <th><label for="t_hardness" id="l_hardness"><span></span> Dureza</label></th>
+    <td id="HARDNESS"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_modulus" value="modulus"></td>
+    <th><label for="t_modulus" id="l_modulus"><span></span> Módulo</label></th>
+    <td id="MODULUS"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_density" value="density"></td>
+    <th><label for="t_density" id="l_density"><span></span> Densidad</label></th>
+    <td id="DENSITY"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_conductivity" value="conductivity"></td>
+    <th><label for="t_conductivity" id="l_conductivity"><span></span> Conductividad</label></th>
+    <td id="CONDUCTIVITY"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_heat" value="heat"></td>
+    <th><label for="t_heat" id="l_heat"><span></span> Heat</label></th>
+    <td id="HEAT"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_abundance" value="abundance"></td>
+    <th><label for="t_abundance" id="l_abundance"><span></span> Abundancia</label></th>
+    <td id="ABUNDANCE"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_discover" value="discover"></td>
+    <th><label for="t_discover" id="l_discover">Descubierto</label></th>
+    <td id="DISCOVER"></td>
+   </tr>
+  </tbody></table>
+  <table cellspacing="0" cellpadding="0">
+   <tbody><tr>
+    <td><input type="radio" name="visualize" id="t_chemical" value="chemical"></td>
+    <th><label for="t_chemical" id="l_chemical"><span></span> Serie</label></th>
+    <td id="CHEMICAL"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_state" value="state" checked=""></td>
+    <th><label for="t_state" id="l_state">Estado a <span>0 K</span></label></th>
+    <td id="STATE">Líquido</td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_melt" value="melt"></td>
+    <th><label for="t_melt" id="l_melt">Punto de fusión</label></th>
+    <td id="MELT"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_boil" value="boil"></td>
+    <th><label for="t_boil" id="l_boil">Punto de ebullición</label></th>
+    <td id="BOIL"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_electroneg" value="electroneg"></td>
+    <th><label for="t_electroneg" id="l_electroneg">Electronegatividad</label></th>
+    <td id="ELECTRONEG"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_affinity" value="affinity"></td>
+    <th><label for="t_affinity" id="l_affinity">Afinidad electrónica</label></th>
+    <td id="AFFINITY"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_valence" value="valence"></td>
+    <th><label for="t_valence" id="l_valence"><span></span> Valencia</label></th>
+    <td id="VALENCE"></td>
+   </tr><tr>
+    <td><input type="radio" name="visualize" id="t_ionize" value="ionize"></td>
+    <th><label for="t_ionize" id="l_ionize"><span></span> Energía de ionización</label></th>
+    <td id="IONIZE"></td>
+   </tr>
+  </tbody></table>
+ </form></div><table id="Hund" cellspacing="0" cellpadding="0" border="0" style="display: none; opacity: 1;">
+  <tbody><tr>
+   <td><table border="0" cellpadding="1" cellspacing="1"><tbody>
+    <tr><th>7s</th> <td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td></tr>
+    <tr><th>6s</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>5s</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>4s</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>3s</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>2s</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>1s</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+   </tbody></table></td>
+
+   <td style="padding-bottom: 3.15em;"><table border="0" cellpadding="1" cellspacing="1"><tbody>
+    <tr><th>7p</th> <td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td></tr>
+    <tr><th>6p</th> <td><span style="visibility: visible;">↑</span><span style="visibility: hidden;">↓</span></td><td class="HoverOrbital"><span style="visibility: visible;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td></tr>
+    <tr><th>5p</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>4p</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>3p</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>2p</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+   </tbody></table></td>
+
+   <td style="padding-bottom: 6.3em;"><table border="0" cellpadding="1" cellspacing="1"><tbody>
+    <tr><th>6d</th> <td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td></tr>
+    <tr><th>5d</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>4d</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    <tr><th>3d</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    </tbody></table>
+    <table id="lmn" cellspacing="0"><tbody>
+     <tr><th align="right">ℓ</th><td>=</td><td style="width: 1em;">1</td></tr>
+     <tr><th align="right">m</th><td>=</td><td>0</td></tr>
+     <tr><th align="right">n</th><td>=</td><td>6</td></tr>
+   </tbody></table></td>
+
+   <td style="padding-bottom: 9.45em;" id="OrbitalHolder"><table border="0" cellpadding="1" cellspacing="1"><tbody>
+    <tr><th>5f</th> <td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td><td><span style="visibility: hidden;">↑</span><span style="visibility: hidden;">↓</span></td></tr>
+    <tr><th>4f</th> <td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td><td><span style="visibility: visible;">↑</span><span style="visibility: visible;">↓</span></td></tr>
+    </tbody></table>
+    <div id="Orbital" style="background-image: url(&quot;//www.ptable.com/Images/orbitals-p.png&quot;); background-position: -108px -432px;"></div>
+   </td>
+  </tr>
+ </tbody></table><table id="Block" class="Block" cellspacing="5" cellpadding="0" style="display: none; opacity: 1;"><tbody>
+  <tr><th id="s" class="s Highlight"><a href="http://es.wikipedia.org/wiki/Elementos%20del%20bloque%20s">s</a></th></tr>
+  <tr><th id="p" class="p"><a href="http://es.wikipedia.org/wiki/Elementos%20del%20bloque%20p">p</a></th></tr>
+  <tr><th id="d" class="d"><a href="http://es.wikipedia.org/wiki/Elementos%20del%20bloque%20d">d</a></th></tr>
+  <tr><th id="f" class="f"><a href="http://es.wikipedia.org/wiki/Elementos%20del%20bloque%20f">f</a></th></tr>
+ </tbody></table><table id="DecayModes" class="AlphaEmission ProtonEmission TwoProtonEmission NeutronEmission TwoNeutronEmission SpontaneousFission BetaDecay DoubleBetaDecay BetaPlusDecay DoubleBetaPlusDecay ElectronCapture Stable" cellspacing="4" cellpadding="1" border="0" style="display: none; opacity: 1;">
+  <tbody class=""><tr>
+   <th class="AlphaEmission">α</th> <td><a href="http://es.wikipedia.org/wiki/Desintegraci%C3%B3n%20alfa">Desintegración alfa</a></td>
+   <th class="DoubleBetaDecay BetaDecay">β−</th> <td><a href="http://es.wikipedia.org/wiki/Desintegraci%C3%B3n%20beta">Desintegración beta</a></td>
+  </tr><tr>
+   <th class="TwoProtonEmission ProtonEmission">p</th> <td><a href="http://es.wikipedia.org/wiki/Emisi%C3%B3n%20de%20protones">Emisión de protones</a></td>
+   <th class="DoubleBetaPlusDecay BetaPlusDecay">β+</th> <td><a href="http://es.wikipedia.org/wiki/Positron%20emission">Positron emission</a></td>
+  </tr><tr>
+   <th class="TwoNeutronEmission NeutronEmission">n</th> <td><a href="http://es.wikipedia.org/wiki/Emisi%C3%B3n%20de%20neutrones">Emisión de neutrones</a></td>
+   <th class="ElectronCapture">K+</th> <td><a href="http://es.wikipedia.org/wiki/Captura%20electr%C3%B3nica">Captura electrónica</a></td>
+  </tr><tr>
+   <th class="SpontaneousFission">SF</th> <td><a href="http://es.wikipedia.org/wiki/Fisi%C3%B3n%20espont%C3%A1nea">Fisión espontánea</a></td>
+   <th class="Stable">&nbsp;</th> <td><a>Estable</a></td>
+  </tr>
+ </tbody></table><div id="CompoundResults" style="opacity: 1; display: none;">Your criteria did not match any compounds.</div></td></tr></tbody></table>
+  </td>
+
+  <td colspan="5" id="SliderCell">
+   <div id="SliderHolder" style="height: 33px;">
+    <div style="position: absolute; width: 100%; height: 100%;"><div style="position: absolute; width: 100%; height: 100%;">
+      <div id="SliderTrack" class="SliderTrack" style=""><div id="SliderSlit" class="SliderSlit"><!--[if lt IE 8]><img src="Images/temperature.png" alt=""><![endif]--><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWgAAAAtCAIAAAAMZWbpAAABSElEQVR4Xu3UO04EMRAEUHs+3IarcP9TEO4XbALobUtjLZC/F7VK5VltUvX17b2EbavDncck3H9vHj+7zwr7tLlOm3X6/Zf9cdQMtwyPzX3WHMv7GG4R7rPw+DzybIYt/te6TsMyhDWfhHWZFNall1CX9n0s9TPDuGttJWQh83lYy61keo8rwiiE54V7SZc4TiWdx2NS6MdC3r1fsvjxEcd9DPP+vB/D9vRVv/Vs3locGfbrWOjxqmV4fYSz5rUdwijn8wxnP9p+wsvQPA+FU7w6jYUW4ayZz7OwlD8D+PdwABgOwHAAhgMwHIDhAAwHgOEADAdgOADDARgOAMMBGA7AcACGAzAcAIYDMByA4QAMB2A4AAwHYDgAwwEYDsBwAIYDwHAAhgMwHIDhAAwHgOEADAdgOADDARgOAMMBGA7AcACGAzAcAF+NK4F3t9hauQAAAABJRU5ErkJggg==" id="DataTemperature" alt="" style=""></div><button id="SliderBar" class="SliderBar" style="left: 0%;"></button></div>
+      <input id="SliderDisplay" class="SliderDisplay" type="number" value="0" style="">
+      <select id="SliderSelect" class="SliderSelect" style="display: none;"></select>
+     </div></div>
+   </div>
+  </td>
+
+  
+  <td class="Element Noble s" style=""><a href="https://es.wikipedia.org/wiki/Helio" style=""><big><strong an="2">2</strong> <acronym style="color: rgb(0, 0, 221);">He</acronym> <em>Helio</em> <i>4,0026</i></big><small>2</small></a></td><td class="Shells"><small>K</small></td>
+ </tr>
+
+ <tr>
+  <th class="Period" style=""><a href="http://es.wikipedia.org/wiki/Elementos%20del%20periodo%202">2</a></th>
+  <td class="Element Alkali s" style=""><a href="https://es.wikipedia.org/wiki/Litio" style=""><big><strong an="3">3</strong> <acronym style="color: rgb(0, 0, 0);">Li</acronym> <em>Litio</em> <i>6,94</i></big><small>2<br>1</small></a></td>
+  <td class="Element Alkaline s" style=""><a href="https://es.wikipedia.org/wiki/Berilio" style=""><big><strong an="4">4</strong> <acronym style="color: rgb(0, 0, 0);">Be</acronym> <em>Berilio</em> <i>9,0122</i></big><small>2<br>2</small></a></td>
+  <td class="Element Metalloid Boron p" style=""><a href="https://es.wikipedia.org/wiki/Boro" style=""><big><strong an="5">5</strong> <acronym style="color: rgb(0, 0, 0);">B</acronym> <em>Boro</em> <i>10,81</i></big><small>2<br>3</small></a></td>
+  <td class="Element Nonmetal Carbon p" style=""><a href="https://es.wikipedia.org/wiki/Carbono" style=""><big><strong an="6">6</strong> <acronym style="color: rgb(0, 0, 0);">C</acronym> <em>Carbono</em> <i>12,011</i></big><small>2<br>4</small></a></td>
+  <td class="Element Nonmetal Pnictogen p" style=""><a href="https://es.wikipedia.org/wiki/Nitr%C3%B3geno" style=""><big><strong an="7">7</strong> <acronym style="color: rgb(0, 0, 0);">N</acronym> <em>Nitrógeno</em> <i>14,007</i></big><small>2<br>5</small></a></td>
+  <td class="Element Nonmetal Chalcogen p" style=""><a href="https://es.wikipedia.org/wiki/Ox%C3%ADgeno" style=""><big><strong an="8">8</strong> <acronym style="color: rgb(0, 0, 0);">O</acronym> <em>Oxígeno</em> <i>15,999</i></big><small>2<br>6</small></a></td>
+  <td class="Element Nonmetal Halogen p" style=""><a href="https://es.wikipedia.org/wiki/Fl%C3%BAor" style=""><big><strong an="9">9</strong> <acronym style="color: rgb(0, 0, 0);">F</acronym> <em>Flúor</em> <i>18,998</i></big><small>2<br>7</small></a></td>
+  <td class="Element Noble p" style=""><a href="https://es.wikipedia.org/wiki/Ne%C3%B3n" style=""><big><strong an="10">10</strong> <acronym style="color: rgb(0, 0, 0);">Ne</acronym> <em>Neón</em> <i>20,180</i></big><small>2<br>8</small></a></td>
+  <td class="Shells"><small>K<br>L</small></td>
+ </tr>
+
+ <tr>
+  <th class="Period" style=""><a href="http://es.wikipedia.org/wiki/Elementos%20del%20periodo%203">3</a></th>
+  <td class="Element Alkali s" style=""><a href="https://es.wikipedia.org/wiki/Sodio" style=""><big><strong an="11">11</strong> <acronym style="color: rgb(0, 0, 0);">Na</acronym> <em>Sodio</em> <i>22,990</i></big><small>2<br>8<br>1</small></a></td>
+  <td class="Element Alkaline s" style=""><a href="https://es.wikipedia.org/wiki/Magnesio" style=""><big><strong an="12">12</strong> <acronym style="color: rgb(0, 0, 0);">Mg</acronym> <em>Magnesio</em> <i>24,305</i></big><small>2<br>8<br>2</small></a></td>
+  <td class="Element Poor Boron p" style=""><a href="https://es.wikipedia.org/wiki/Aluminio" style=""><big><strong an="13">13</strong> <acronym style="color: rgb(0, 0, 0);">Al</acronym> <em>Aluminio</em> <i>26,982</i></big><small>2<br>8<br>3</small></a></td>
+  <td class="Element Metalloid Carbon p" style=""><a href="https://es.wikipedia.org/wiki/Silicio" style=""><big><strong an="14">14</strong> <acronym style="color: rgb(0, 0, 0);">Si</acronym> <em>Silicio</em> <i>28,085</i></big><small>2<br>8<br>4</small></a></td>
+  <td class="Element Nonmetal Pnictogen p" style=""><a href="https://es.wikipedia.org/wiki/F%C3%B3sforo" style=""><big><strong an="15">15</strong> <acronym style="color: rgb(0, 0, 0);">P</acronym> <em>Fósforo</em> <i>30,974</i></big><small>2<br>8<br>5</small></a></td>
+  <td class="Element Nonmetal Chalcogen p" style=""><a href="https://es.wikipedia.org/wiki/Azufre" style=""><big><strong an="16">16</strong> <acronym style="color: rgb(0, 0, 0);">S</acronym> <em>Azufre</em> <i>32,06</i></big><small>2<br>8<br>6</small></a></td>
+  <td class="Element Nonmetal Halogen p" style=""><a href="https://es.wikipedia.org/wiki/Cloro" style=""><big><strong an="17">17</strong> <acronym style="color: rgb(0, 0, 0);">Cl</acronym> <em>Cloro</em> <i>35,45</i></big><small>2<br>8<br>7</small></a></td>
+  <td class="Element Noble p" style=""><a href="https://es.wikipedia.org/wiki/Arg%C3%B3n" style=""><big><strong an="18">18</strong> <acronym style="color: rgb(0, 0, 0);">Ar</acronym> <em>Argón</em> <i>39,948</i></big><small>2<br>8<br>8</small></a></td>
+  <td class="Shells"><small>K<br>L<br>M</small></td>
+ </tr>
+
+ <tr>
+  <th class="Period" style=""><a href="http://es.wikipedia.org/wiki/Elementos%20del%20periodo%204">4</a></th>
+  <td class="Element Alkali s" style=""><a href="https://es.wikipedia.org/wiki/Potasio" style=""><big><strong an="19">19</strong> <acronym style="color: rgb(0, 0, 0);">K</acronym> <em>Potasio</em> <i>39,098</i></big><small>2<br>8<br>8<br>1</small></a></td>
+  <td class="Element Alkaline s" style=""><a href="https://es.wikipedia.org/wiki/Calcio" style=""><big><strong an="20">20</strong> <acronym style="color: rgb(0, 0, 0);">Ca</acronym> <em>Calcio</em> <i>40,078</i></big><small>2<br>8<br>8<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Escandio" style=""><big><strong an="21">21</strong> <acronym style="color: rgb(0, 0, 0);">Sc</acronym> <em>Escandio</em> <i>44,956</i></big><small>2<br>8<br>9<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Titanio" style=""><big><strong an="22">22</strong> <acronym style="color: rgb(0, 0, 0);">Ti</acronym> <em>Titanio</em> <i>47,867</i></big><small>2<br>8<br>10<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Vanadio" style=""><big><strong an="23">23</strong> <acronym style="color: rgb(0, 0, 0);">V</acronym> <em>Vanadio</em> <i>50,942</i></big><small>2<br>8<br>11<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Cromo" style=""><big><strong an="24">24</strong> <acronym style="color: rgb(0, 0, 0);">Cr</acronym> <em>Cromo</em> <i>51,996</i></big><small>2<br>8<br>13<br>1</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Manganeso" style=""><big><strong an="25">25</strong> <acronym style="color: rgb(0, 0, 0);">Mn</acronym> <em class="Long">Manganeso</em> <i>54,938</i></big><small>2<br>8<br>13<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Hierro" style=""><big><strong an="26">26</strong> <acronym style="color: rgb(0, 0, 0);">Fe</acronym> <em>Hierro</em> <i>55,845</i></big><small>2<br>8<br>14<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Cobalto" style=""><big><strong an="27">27</strong> <acronym style="color: rgb(0, 0, 0);">Co</acronym> <em>Cobalto</em> <i>58,933</i></big><small>2<br>8<br>15<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/N%C3%ADquel" style=""><big><strong an="28">28</strong> <acronym style="color: rgb(0, 0, 0);">Ni</acronym> <em>Níquel</em> <i>58,693</i></big><small>2<br>8<br>16<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Cobre" style=""><big><strong an="29">29</strong> <acronym style="color: rgb(0, 0, 0);">Cu</acronym> <em>Cobre</em> <i>63,546</i></big><small>2<br>8<br>18<br>1</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Cinc" style=""><big><strong an="30">30</strong> <acronym style="color: rgb(0, 0, 0);">Zn</acronym> <em>Cinc</em> <i>65,38</i></big><small>2<br>8<br>18<br>2</small></a></td>
+  <td class="Element Poor Boron p" style=""><a href="https://es.wikipedia.org/wiki/Galio" style=""><big><strong an="31">31</strong> <acronym style="color: rgb(0, 0, 0);">Ga</acronym> <em>Galio</em> <i>69,723</i></big><small>2<br>8<br>18<br>3</small></a></td>
+  <td class="Element Metalloid Carbon p" style=""><a href="https://es.wikipedia.org/wiki/Germanio" style=""><big><strong an="32">32</strong> <acronym style="color: rgb(0, 0, 0);">Ge</acronym> <em>Germanio</em> <i>72,630</i></big><small>2<br>8<br>18<br>4</small></a></td>
+  <td class="Element Metalloid Pnictogen p Throb" style=""><a href="https://es.wikipedia.org/wiki/Ars%C3%A9nico" style=""><big><strong an="33">33</strong> <acronym style="color: rgb(0, 0, 0);">As</acronym> <em>Arsénico</em> <i>74,922</i></big><small>2<br>8<br>18<br>5</small></a></td>
+  <td class="Element Nonmetal Chalcogen p" style=""><a href="https://es.wikipedia.org/wiki/Selenio" style=""><big><strong an="34">34</strong> <acronym style="color: rgb(0, 0, 0);">Se</acronym> <em>Selenio</em> <i>78,971</i></big><small>2<br>8<br>18<br>6</small></a></td>
+  <td class="Element Nonmetal Halogen p" style=""><a href="https://es.wikipedia.org/wiki/Bromo" style=""><big><strong an="35">35</strong> <acronym style="color: rgb(0, 0, 0);">Br</acronym> <em>Bromo</em> <i>79,904</i></big><small>2<br>8<br>18<br>7</small></a></td>
+  <td class="Element Noble p" style=""><a href="https://es.wikipedia.org/wiki/Kript%C3%B3n" style=""><big><strong an="36">36</strong> <acronym style="color: rgb(0, 0, 0);">Kr</acronym> <em>Kriptón</em> <i>83,798</i></big><small>2<br>8<br>18<br>8</small></a></td>
+  <td class="Shells"><small>K<br>L<br>M<br>N</small></td>
+ </tr>
+
+ <tr>
+  <th class="Period" style="background-color: rgb(255, 255, 128);"><a href="http://es.wikipedia.org/wiki/Elementos%20del%20periodo%205">5</a></th>
+  <td class="Element Alkali s" style=""><a href="https://es.wikipedia.org/wiki/Rubidio" style=""><big><strong an="37">37</strong> <acronym style="color: rgb(0, 0, 0);">Rb</acronym> <em>Rubidio</em> <i>85,468</i></big><small>2<br>8<br>18<br>8<br>1</small></a></td>
+  <td class="Element Alkaline s" style=""><a href="https://es.wikipedia.org/wiki/Estroncio" style=""><big><strong an="38">38</strong> <acronym style="color: rgb(0, 0, 0);">Sr</acronym> <em>Estroncio</em> <i>87,62</i></big><small>2<br>8<br>18<br>8<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Itrio" style=""><big><strong an="39">39</strong> <acronym style="color: rgb(0, 0, 0);">Y</acronym> <em>Itrio</em> <i>88,906</i></big><small>2<br>8<br>18<br>9<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Circonio" style=""><big><strong an="40">40</strong> <acronym style="color: rgb(0, 0, 0);">Zr</acronym> <em>Circonio</em> <i>91,224</i></big><small>2<br>8<br>18<br>10<br>2</small></a></td>
+  <td class="Element Transition d Throb FirstColor" style=""><a href="https://es.wikipedia.org/wiki/Niobio" style=""><big><strong an="41">41</strong> <acronym style="color: rgb(0, 0, 0);">Nb</acronym> <em>Niobio</em> <i>92,906</i></big><small>2<br>8<br>18<br>12<br>1</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Molibdeno" style=""><big><strong an="42">42</strong> <acronym style="color: rgb(0, 0, 0);">Mo</acronym> <em class="Long">Molibdeno</em> <i>95,95</i></big><small>2<br>8<br>18<br>13<br>1</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Tecnecio" style=""><big><strong an="43">43</strong> <acronym style="color: rgb(0, 0, 0);">Tc</acronym> <em>Tecnecio</em> <i>(98)</i></big><small>2<br>8<br>18<br>13<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Rutenio" style=""><big><strong an="44">44</strong> <acronym style="color: rgb(0, 0, 0);">Ru</acronym> <em>Rutenio</em> <i>101,07</i></big><small>2<br>8<br>18<br>15<br>1</small></a></td>
+  <td class="Element Transition d Throb" style=""><a href="https://es.wikipedia.org/wiki/Rodio" style=""><big><strong an="45">45</strong> <acronym style="color: rgb(0, 0, 0);">Rh</acronym> <em>Rodio</em> <i>102,91</i></big><small>2<br>8<br>18<br>16<br>1</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Paladio" style=""><big><strong an="46">46</strong> <acronym style="color: rgb(0, 0, 0);">Pd</acronym> <em>Paladio</em> <i>106,42</i></big><small>2<br>8<br>18<br>18</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Plata" style=""><big><strong an="47">47</strong> <acronym style="color: rgb(0, 0, 0);">Ag</acronym> <em>Plata</em> <i>107,87</i></big><small>2<br>8<br>18<br>18<br>1</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Cadmio" style=""><big><strong an="48">48</strong> <acronym style="color: rgb(0, 0, 0);">Cd</acronym> <em>Cadmio</em> <i>112,41</i></big><small>2<br>8<br>18<br>18<br>2</small></a></td>
+  <td class="Element Poor Boron p" style=""><a href="https://es.wikipedia.org/wiki/Indio%20(elemento)" style=""><big><strong an="49">49</strong> <acronym style="color: rgb(0, 0, 0);">In</acronym> <em wiki="Indio (elemento)">Indio</em> <i>114,82</i></big><small>2<br>8<br>18<br>18<br>3</small></a></td>
+  <td class="Element Poor Carbon p" style=""><a href="https://es.wikipedia.org/wiki/Esta%C3%B1o" style=""><big><strong an="50">50</strong> <acronym style="color: rgb(0, 0, 0);">Sn</acronym> <em>Estaño</em> <i>118,71</i></big><small>2<br>8<br>18<br>18<br>4</small></a></td>
+  <td class="Element Metalloid Pnictogen p" style=""><a href="https://es.wikipedia.org/wiki/Antimonio" style=""><big><strong an="51">51</strong> <acronym style="color: rgb(0, 0, 0);">Sb</acronym> <em>Antimonio</em> <i>121,76</i></big><small>2<br>8<br>18<br>18<br>5</small></a></td>
+  <td class="Element Metalloid Chalcogen p" style=""><a href="https://es.wikipedia.org/wiki/Telurio" style=""><big><strong an="52">52</strong> <acronym style="color: rgb(0, 0, 0);">Te</acronym> <em>Telurio</em> <i>127,60</i></big><small>2<br>8<br>18<br>18<br>6</small></a></td>
+  <td class="Element Nonmetal Halogen p" style=""><a href="https://es.wikipedia.org/wiki/Yodo" style=""><big><strong an="53">53</strong> <acronym style="color: rgb(0, 0, 0);">I</acronym> <em>Yodo</em> <i>126,90</i></big><small>2<br>8<br>18<br>18<br>7</small></a></td>
+  <td class="Element Noble p" style=""><a href="https://es.wikipedia.org/wiki/Xen%C3%B3n" style=""><big><strong an="54">54</strong> <acronym style="color: rgb(0, 0, 0);">Xe</acronym> <em>Xenón</em> <i>131,29</i></big><small>2<br>8<br>18<br>18<br>8</small></a></td>
+  <td class="Shells"><small>K<br>L<br>M<br>N<br>O</small></td>
+ </tr>
+
+ <tr>
+  <th class="Period" style=""><a href="http://es.wikipedia.org/wiki/Elementos%20del%20periodo%206">6</a></th>
+  <td class="Element Alkali s" style=""><a href="https://es.wikipedia.org/wiki/Cesio" style=""><big><strong an="55">55</strong> <acronym style="color: rgb(0, 0, 0);">Cs</acronym> <em>Cesio</em> <i>132,91</i></big><small>2<br>8<br>18<br>18<br>8<br>1</small></a></td>
+  <td class="Element Alkaline s" style=""><a href="https://es.wikipedia.org/wiki/Bario" style=""><big><strong an="56">56</strong> <acronym style="color: rgb(0, 0, 0);">Ba</acronym> <em>Bario</em> <i>137,33</i></big><small>2<br>8<br>18<br>18<br>8<br>2</small></a></td>
+  <td class="Lanthanoid InnerBorder BlueLeft BlueTop BlueRight" style="">57–71</td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Hafnio" style=""><big><strong an="72">72</strong> <acronym style="color: rgb(0, 0, 0);">Hf</acronym> <em>Hafnio</em> <i>178,49</i></big><small>2<br>8<br>18<br>32<br>10<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Tantalio" style=""><big><strong an="73">73</strong> <acronym style="color: rgb(0, 0, 0);">Ta</acronym> <em>Tantalio</em> <i>180,95</i></big><small>2<br>8<br>18<br>32<br>11<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Wolframio" style=""><big><strong an="74">74</strong> <acronym style="color: rgb(0, 0, 0);">W</acronym> <em class="Long">Wolframio</em> <i>183,84</i></big><small>2<br>8<br>18<br>32<br>12<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Renio" style=""><big><strong an="75">75</strong> <acronym style="color: rgb(0, 0, 0);">Re</acronym> <em>Renio</em> <i>186,21</i></big><small>2<br>8<br>18<br>32<br>13<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Osmio" style=""><big><strong an="76">76</strong> <acronym style="color: rgb(0, 0, 0);">Os</acronym> <em>Osmio</em> <i>190,23</i></big><small>2<br>8<br>18<br>32<br>14<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Iridio" style=""><big><strong an="77">77</strong> <acronym style="color: rgb(0, 0, 0);">Ir</acronym> <em>Iridio</em> <i>192,22</i></big><small>2<br>8<br>18<br>32<br>15<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Platino" style=""><big><strong an="78">78</strong> <acronym style="color: rgb(0, 0, 0);">Pt</acronym> <em>Platino</em> <i>195,08</i></big><small>2<br>8<br>18<br>32<br>17<br>1</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Oro" style=""><big><strong an="79">79</strong> <acronym style="color: rgb(0, 0, 0);">Au</acronym> <em>Oro</em> <i>196,97</i></big><small>2<br>8<br>18<br>32<br>18<br>1</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Mercurio" style=""><big><strong an="80">80</strong> <acronym style="color: rgb(0, 0, 0);">Hg</acronym> <em>Mercurio</em> <i>200,59</i></big><small>2<br>8<br>18<br>32<br>18<br>2</small></a></td>
+  <td class="Element Poor Boron p" style=""><a href="https://es.wikipedia.org/wiki/Talio" style=""><big><strong an="81">81</strong> <acronym style="color: rgb(0, 0, 0);">Tl</acronym> <em>Talio</em> <i>204,38</i></big><small>2<br>8<br>18<br>32<br>18<br>3</small></a></td>
+  <td class="Element Poor Carbon p Throb" style=""><a href="https://es.wikipedia.org/wiki/Plomo" style=""><big><strong an="82">82</strong> <acronym style="color: rgb(0, 0, 0);">Pb</acronym> <em>Plomo</em> <i>207,2</i></big><small>2<br>8<br>18<br>32<br>18<br>4</small></a></td>
+  <td class="Element Poor Pnictogen p Throb" style=""><a href="https://es.wikipedia.org/wiki/Bismuto" style=""><big><strong an="83">83</strong> <acronym style="color: rgb(0, 0, 0);">Bi</acronym> <em>Bismuto</em> <i>208,98</i></big><small>2<br>8<br>18<br>32<br>18<br>5</small></a></td>
+  <td class="Element Poor Chalcogen p" style=""><a href="https://es.wikipedia.org/wiki/Polonio" style=""><big><strong an="84">84</strong> <acronym style="color: rgb(0, 0, 0);">Po</acronym> <em>Polonio</em> <i>(209)</i></big><small>2<br>8<br>18<br>32<br>18<br>6</small></a></td>
+  <td class="Element Metalloid Halogen p" style=""><a href="https://es.wikipedia.org/wiki/Astato" style=""><big><strong an="85">85</strong> <acronym style="color: rgb(0, 0, 0);">At</acronym> <em>Astato</em> <i>(210)</i></big><small>2<br>8<br>18<br>32<br>18<br>7</small></a></td>
+  <td class="Element Noble p" style=""><a href="https://es.wikipedia.org/wiki/Rad%C3%B3n" style=""><big><strong an="86">86</strong> <acronym style="color: rgb(0, 0, 0);">Rn</acronym> <em>Radón</em> <i>(222)</i></big><small>2<br>8<br>18<br>32<br>18<br>8</small></a></td>
+  <td class="Shells"><small>K<br>L<br>M<br>N<br>O<br>P</small></td>
+ </tr>
+
+ <tr>
+  <th class="Period" style=""><a href="http://es.wikipedia.org/wiki/Elementos%20del%20periodo%207">7</a></th>
+  <td class="Element Alkali s" style=""><a href="https://es.wikipedia.org/wiki/Francio" style=""><big><strong an="87">87</strong> <acronym style="color: rgb(0, 0, 0);">Fr</acronym> <em>Francio</em> <i>(223)</i></big><small>2<br>8<br>18<br>32<br>18<br>8<br>1</small></a></td>
+  <td class="Element Alkaline s" style=""><a href="https://es.wikipedia.org/wiki/Radio" style=""><big><strong an="88">88</strong> <acronym style="color: rgb(0, 0, 0);">Ra</acronym> <em>Radio</em> <i>(226)</i></big><small>2<br>8<br>18<br>32<br>18<br>8<br>2</small></a></td>
+  <td class="Actinoid InnerBorder BlueLeft BlueRight" style="">89–103</td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Rutherfordio" style=""><big><strong an="104">104</strong> <acronym style="color: rgb(102, 119, 102);">Rf</acronym> <em class="Long">Rutherfordio</em> <i>(267)</i></big><small>2<br>8<br>18<br>32<br>32<br>10<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Dubnio" style=""><big><strong an="105">105</strong> <acronym style="color: rgb(102, 119, 102);">Db</acronym> <em>Dubnio</em> <i>(268)</i></big><small>2<br>8<br>18<br>32<br>32<br>11<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Seaborgio" style=""><big><strong an="106">106</strong> <acronym style="color: rgb(102, 119, 102);">Sg</acronym> <em class="Long">Seaborgio</em> <i>(269)</i></big><small>2<br>8<br>18<br>32<br>32<br>12<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Bohrio" style=""><big><strong an="107">107</strong> <acronym style="color: rgb(102, 119, 102);">Bh</acronym> <em>Bohrio</em> <i>(270)</i></big><small>2<br>8<br>18<br>32<br>32<br>13<br>2</small></a></td>
+  <td class="Element Transition d Throb" style=""><a href="https://es.wikipedia.org/wiki/Hassio" style=""><big><strong an="108">108</strong> <acronym style="color: rgb(102, 119, 102);">Hs</acronym> <em>Hassio</em> <i>(277)</i></big><small>2<br>8<br>18<br>32<br>32<br>14<br>2</small></a></td>
+  <td class="Element  d" style=""><a href="https://es.wikipedia.org/wiki/Meitnerio" style=""><big><strong an="109">109</strong> <acronym style="color: rgb(102, 119, 102);">Mt</acronym> <em>Meitnerio</em> <i>(278)</i></big><small>2<br>8<br>18<br>32<br>32<br>15<br>2</small></a></td>
+  <td class="Element  d Throb FirstColor" style=""><a href="https://es.wikipedia.org/wiki/Darmstadio" style=""><big><strong an="110">110</strong> <acronym style="color: rgb(102, 119, 102);">Ds</acronym> <em class="Long">Darmstadio</em> <i>(281)</i></big><small>2<br>8<br>18<br>32<br>32<br>17<br>1</small></a></td>
+  <td class="Element  d" style=""><a href="https://es.wikipedia.org/wiki/Roentgenio" style=""><big><strong an="111">111</strong> <acronym style="color: rgb(102, 119, 102);">Rg</acronym> <em class="Long">Roentgenio</em> <i>(282)</i></big><small>2<br>8<br>18<br>32<br>32<br>17<br>2</small></a></td>
+  <td class="Element Transition d" style=""><a href="https://es.wikipedia.org/wiki/Copernicio" style=""><big><strong an="112">112</strong> <acronym style="color: rgb(102, 119, 102);">Cn</acronym> <em class="Long">Copernicio</em> <i>(285)</i></big><small>2<br>8<br>18<br>32<br>32<br>18<br>2</small></a></td>
+  <td class="Element  p" style=""><a href="https://es.wikipedia.org/wiki/Nihonium" style=""><big><strong an="113">113</strong> <acronym style="color: rgb(102, 119, 102);">Nh</acronym> <em>Nihonium</em> <i>(286)</i></big><small>2<br>8<br>18<br>32<br>32<br>18<br>3</small></a></td>
+  <td class="Element Poor Carbon p" style=""><a href="https://es.wikipedia.org/wiki/Flerovio" style=""><big><strong an="114">114</strong> <acronym style="color: rgb(102, 119, 102);">Fl</acronym> <em>Flerovio</em> <i>(289)</i></big><small>2<br>8<br>18<br>32<br>32<br>18<br>4</small></a></td>
+  <td class="Element  p" style=""><a href="https://es.wikipedia.org/wiki/Moscovium" style=""><big><strong an="115">115</strong> <acronym style="color: rgb(102, 119, 102);">Mc</acronym> <em class="Long">Moscovium</em> <i>(290)</i></big><small>2<br>8<br>18<br>32<br>32<br>18<br>5</small></a></td>
+  <td class="Element  p" style=""><a href="https://es.wikipedia.org/wiki/Livermorio" style=""><big><strong an="116">116</strong> <acronym style="color: rgb(102, 119, 102);">Lv</acronym> <em class="Long">Livermorio</em> <i>(293)</i></big><small>2<br>8<br>18<br>32<br>32<br>18<br>6</small></a></td>
+  <td class="Element  p" style=""><a href="https://es.wikipedia.org/wiki/Tennessine" style=""><big><strong an="117">117</strong> <acronym style="color: rgb(102, 119, 102);">Ts</acronym> <em class="Long">Tennessine</em> <i>(294)</i></big><small>2<br>8<br>18<br>32<br>32<br>18<br>7</small></a></td>
+  <td class="Element  p" style=""><a href="https://es.wikipedia.org/wiki/Oganesson" style=""><big><strong an="118">118</strong> <acronym style="color: rgb(102, 119, 102);">Og</acronym> <em class="Long">Oganesson</em> <i>(294)</i></big><small>2<br>8<br>18<br>32<br>32<br>18<br>8</small></a></td>
+  <td class="Shells"><small>K<br>L<br>M<br>N<br>O<br>P<br>Q</small></td>
+ </tr>
+
+ <tr style="">
+  <td colspan="3" rowspan="4"></td>
+  <td class="InnerBorder BlueLeft BlueRight"></td>
+  <td class="Paren" id="Paren" colspan="16">En el caso de los elementos con isotopos no estables, entre parentesis se encuentran las masas de aquellos isótopos que son más estables o más abundantes.</td>
+ </tr>
+
+ <tr style="">
+  <td class="InnerBorder BlueLeft"></td>
+  <td class="InnerBorder BlueTop BlueBottom Copyright" colspan="15"><span style="">Tabla Periódica Diseño e Interface de Copyright © 1997 <a href="http://www.dayah.com/">Michael Dayah</a>. Ptable.com Última actualización 16 jun. 2017</span>&nbsp;</td>
+  <td class="InnerBorder BlueTop BlueRight"></td>
+ </tr>
+
+ <tr style="">
+  <td class="InnerBorder BlueLeft BlueRight BlueBottom" rowspan="2"></td>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Lantano" style=""><big><strong an="57">57</strong> <acronym style="color: rgb(0, 0, 0);">La</acronym> <em>Lantano</em> <i>138,91</i></big><small>2<br>8<br>18<br>18<br>9<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Cerio" style=""><big><strong an="58">58</strong> <acronym style="color: rgb(0, 0, 0);">Ce</acronym> <em>Cerio</em> <i>140,12</i></big><small>2<br>8<br>18<br>19<br>9<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Praseodimio" style=""><big><strong an="59">59</strong> <acronym style="color: rgb(0, 0, 0);">Pr</acronym> <em class="Long">Praseodimio</em> <i>140,91</i></big><small>2<br>8<br>18<br>21<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Neodimio" style=""><big><strong an="60">60</strong> <acronym style="color: rgb(0, 0, 0);">Nd</acronym> <em>Neodimio</em> <i>144,24</i></big><small>2<br>8<br>18<br>22<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Prometio" style=""><big><strong an="61">61</strong> <acronym style="color: rgb(0, 0, 0);">Pm</acronym> <em>Prometio</em> <i>(145)</i></big><small>2<br>8<br>18<br>23<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Samario" style=""><big><strong an="62">62</strong> <acronym style="color: rgb(0, 0, 0);">Sm</acronym> <em>Samario</em> <i>150,36</i></big><small>2<br>8<br>18<br>24<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Europio" style=""><big><strong an="63">63</strong> <acronym style="color: rgb(0, 0, 0);">Eu</acronym> <em>Europio</em> <i>151,96</i></big><small>2<br>8<br>18<br>25<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Gadolinio" style=""><big><strong an="64">64</strong> <acronym style="color: rgb(0, 0, 0);">Gd</acronym> <em>Gadolinio</em> <i>157,25</i></big><small>2<br>8<br>18<br>25<br>9<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Terbio" style=""><big><strong an="65">65</strong> <acronym style="color: rgb(0, 0, 0);">Tb</acronym> <em>Terbio</em> <i>158,93</i></big><small>2<br>8<br>18<br>27<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Disprosio" style=""><big><strong an="66">66</strong> <acronym style="color: rgb(0, 0, 0);">Dy</acronym> <em>Disprosio</em> <i>162,50</i></big><small>2<br>8<br>18<br>28<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Holmio" style=""><big><strong an="67">67</strong> <acronym style="color: rgb(0, 0, 0);">Ho</acronym> <em>Holmio</em> <i>164,93</i></big><small>2<br>8<br>18<br>29<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Erbio" style=""><big><strong an="68">68</strong> <acronym style="color: rgb(0, 0, 0);">Er</acronym> <em>Erbio</em> <i>167,26</i></big><small>2<br>8<br>18<br>30<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Tulio" style=""><big><strong an="69">69</strong> <acronym style="color: rgb(0, 0, 0);">Tm</acronym> <em>Tulio</em> <i>168,93</i></big><small>2<br>8<br>18<br>31<br>8<br>2</small></a></td><td class="Element Lanthanoid f" style=""><a href="https://es.wikipedia.org/wiki/Iterbio" style=""><big><strong an="70">70</strong> <acronym style="color: rgb(0, 0, 0);">Yb</acronym> <em>Iterbio</em> <i>173,05</i></big><small>2<br>8<br>18<br>32<br>8<br>2</small></a></td><td class="Element Lanthanoid d" style=""><a href="https://es.wikipedia.org/wiki/Lutecio" style=""><big><strong an="71">71</strong> <acronym style="color: rgb(0, 0, 0);">Lu</acronym> <em>Lutecio</em> <i>174,97</i></big><small>2<br>8<br>18<br>32<br>9<br>2</small></a></td><td rowspan="2" class="InnerBorder BlueRight BlueBottom BlueLeft"></td>
+ </tr>
+
+ <tr style="">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ <td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Actinio" style=""><big><strong an="89">89</strong> <acronym style="color: rgb(0, 0, 0);">Ac</acronym> <em>Actinio</em> <i>(227)</i></big><small>2<br>8<br>18<br>32<br>18<br>9<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Torio" style=""><big><strong an="90">90</strong> <acronym style="color: rgb(0, 0, 0);">Th</acronym> <em>Torio</em> <i>232,04</i></big><small>2<br>8<br>18<br>32<br>18<br>10<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Protactinio" style=""><big><strong an="91">91</strong> <acronym style="color: rgb(0, 0, 0);">Pa</acronym> <em class="Long">Protactinio</em> <i>231,04</i></big><small>2<br>8<br>18<br>32<br>20<br>9<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Uranio" style=""><big><strong an="92">92</strong> <acronym style="color: rgb(0, 0, 0);">U</acronym> <em>Uranio</em> <i>238,03</i></big><small>2<br>8<br>18<br>32<br>21<br>9<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Neptunio" style=""><big><strong an="93">93</strong> <acronym style="color: rgb(0, 0, 0);">Np</acronym> <em>Neptunio</em> <i>(237)</i></big><small>2<br>8<br>18<br>32<br>22<br>9<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Plutonio" style=""><big><strong an="94">94</strong> <acronym style="color: rgb(0, 0, 0);">Pu</acronym> <em>Plutonio</em> <i>(244)</i></big><small>2<br>8<br>18<br>32<br>24<br>8<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Americio" style=""><big><strong an="95">95</strong> <acronym style="color: rgb(0, 0, 0);">Am</acronym> <em>Americio</em> <i>(243)</i></big><small>2<br>8<br>18<br>32<br>25<br>8<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Curio" style=""><big><strong an="96">96</strong> <acronym style="color: rgb(0, 0, 0);">Cm</acronym> <em>Curio</em> <i>(247)</i></big><small>2<br>8<br>18<br>32<br>25<br>9<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Berkelio" style=""><big><strong an="97">97</strong> <acronym style="color: rgb(0, 0, 0);">Bk</acronym> <em>Berkelio</em> <i>(247)</i></big><small>2<br>8<br>18<br>32<br>27<br>8<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Californio" style=""><big><strong an="98">98</strong> <acronym style="color: rgb(0, 0, 0);">Cf</acronym> <em>Californio</em> <i>(251)</i></big><small>2<br>8<br>18<br>32<br>28<br>8<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Einstenio" style=""><big><strong an="99">99</strong> <acronym style="color: rgb(0, 0, 0);">Es</acronym> <em>Einstenio</em> <i>(252)</i></big><small>2<br>8<br>18<br>32<br>29<br>8<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Fermio" style=""><big><strong an="100">100</strong> <acronym style="color: rgb(0, 0, 0);">Fm</acronym> <em>Fermio</em> <i>(257)</i></big><small>2<br>8<br>18<br>32<br>30<br>8<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Mendelevio" style=""><big><strong an="101">101</strong> <acronym style="color: rgb(0, 0, 0);">Md</acronym> <em class="Long">Mendelevio</em> <i>(258)</i></big><small>2<br>8<br>18<br>32<br>31<br>8<br>2</small></a></td><td class="Element Actinoid f" style=""><a href="https://es.wikipedia.org/wiki/Nobelio" style=""><big><strong an="102">102</strong> <acronym style="color: rgb(0, 0, 0);">No</acronym> <em>Nobelio</em> <i>(259)</i></big><small>2<br>8<br>18<br>32<br>32<br>8<br>2</small></a></td><td class="Element Actinoid d" style=""><a href="https://es.wikipedia.org/wiki/Lawrencio" style=""><big><strong an="103">103</strong> <acronym style="color: rgb(0, 0, 0);">Lr</acronym> <em class="Long">Lawrencio</em> <i>(266)</i></big><small>2<br>8<br>18<br>32<br>32<br>8<br>3</small></a></td></tr>
+
+ </tbody>
+</table>
+
+  <div id="WikiBox" class="Wikipedia" style="cursor: e-resize;">
+   <h1 id="WikiTitle"><button id="Close">×</button><button id="Tearoff">⇧</button> <span id="Source">Wikipedia</span> - <a href="http://es.wikipedia.org/wiki/Alcalinos" id="ElementName">Alcalinos</a> - Tabla Periódica</h1>
+   <h2 style="display: none;">Tabla Periódica Chemical Element Loading…</h2>
+   <div id="WikiFrameBox" style=""><iframe id="WikiFrame" name="WikiFrame" frameborder="0" src="./Tabla Periódica Dinámica - Wikipedia_files/saved_resource.html">&lt;h1&gt;Tabla Periódica&lt;/h1&gt;</iframe></div>
+  </div>
+
+  <noscript>&lt;img src="//pixel.quantserve.com/pixel/p-acpWpszny_8go.gif" style="display: none;" alt=""&gt;</noscript>
+  <script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-99745-1', 'auto');
+ga('send', 'pageview');
+  </script>
+ 
+
+</body></html>

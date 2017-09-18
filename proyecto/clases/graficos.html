@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>EJEMPLO DE CANVAS PARA GRAFICAR ECUACIONES</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="canvasej.css">
+        <script src="canvasej.js"></script>
+        <script src="curvabezier.js"></script>
+
+    </head>
+
+    <body>
+
+        <header>
+
+            <h1>OBJETOS GRÁFICOS</h1>
+
+        </header>
+
+        <section>
+
+            <article> 
+                 
+                    <button name="btnBorrar" type="button" value = "Borrar" onclick="btnborrar_click()">Borrar</button>
+                    
+                    <button name="btnLineas" type="button" value = "Lineas" onclick="fun_lineas()">Lineas</button>
+                    
+                    <button name="btnZigzag" type="button" value = "Zigzag" onclick="fun_zigzag()">Zigzag</button>
+                    
+                    <button name="btnEspiral1" type="button" value = "Espiral1" onclick="fun_espiral()">Espiral 1</button>
+                    
+                    <button name="btnEspiral2" type="button" value = "Espiral2" onclick=" fun_espiral2()">Espiral 2</button>
+                    
+                    <button name="btnRectangulo" type="button" value = "Rectangulo" onclick="fun_rectangulo()">Rectangulo</button>
+                    
+                    <button name="btnCirculo" type="button" value = "Circulo" onclick="fun_circunferencia()">Circulo</button>
+                    
+                    <button name="btnDegradado" type="button" value = "Degradado" onclick=" fun_degradado()">Degradado</button>
+                    
+                    <button name="btnTexto" type="button" value = "Texto" onclick=" fun_texto()">Texto</button>
+                    
+                    <button name="btnTexto3d" type="button" value = "texto3d" onclick=" fun_texto3d()">Texto3d</button>
+                    
+                    <button name="btnBezier" type="button" value = "bezier" onclick=" fun_curvabezier()">bezier</button>
+                    
+                    <button name="btnTriangulo" type="button" value = "triangulo" onclick=" fun_triangulo()">triangulo</button>
+                    
+                    
+                    
+                    <br>
+                
+            </article>
+                        
+            <article>
+
+                <p>CANVAS</p>
+                <canvas id="area" width = "500" height="500"></canvas>
+
+               <!-- <p>OTRO CANVAS</p>
+                <canvas id="area1" width = "500" height="500"></canvas>-->
+
+            </article>
+
+        </section>
+        
+    </body>
+    
+</html>
