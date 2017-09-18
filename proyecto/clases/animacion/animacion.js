@@ -5,8 +5,8 @@ function iniciar(){
     elemento = document.getElementById("lienzo");
     lienzo = elemento.getContext("2d");
     valor = 39;
-    posx=100; posy=100;incx=3; intervalo = 0.1;
-    inc_angulo=1*Math.PI/360; angulo=0;
+    posx=100; posy=100;incx=3; intervalo = 1;
+    inc_angulo=4.5*Math.PI/360; angulo=0;
     radio = 100;
     //dibujo1();
 	// dibujo2();
